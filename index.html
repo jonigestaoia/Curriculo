@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonivaldo Feltrin | Currículo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <canvas id="ai-network" class="ai-canvas" aria-hidden="true"></canvas>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#inicio">JF</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
+      <a href="#certificacoes">Certificações</a>
+      <a href="#projetos">Projetos</a>
+    </nav>
+    <div class="header-actions">
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Alternar tema claro ou escuro"
+        title="Alternar tema"
+      >
+        <i data-lucide="sun" class="theme-toggle__sun"></i>
+        <i data-lucide="moon" class="theme-toggle__moon"></i>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero__media">
+        <div class="hero__placeholder" aria-hidden="true">JF</div>
+        <img
+          src="assets/foto-profissional.jpg"
+          alt="Foto profissional de Jonivaldo Feltrin"
+          class="hero__photo"
+          onerror="this.onerror=null;this.src='assets/foto.jpg'"
+        />
+        <div class="hero__veil" aria-hidden="true"></div>
+        <div class="hero__ai" aria-hidden="true">
+          <span class="ai-orb ai-orb--a"></span>
+          <span class="ai-orb ai-orb--b"></span>
+          <span class="ai-orb ai-orb--c"></span>
+          <div class="ai-neural">
+            <svg class="ai-neural__svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+              <g class="ai-neural__rings">
+                <circle cx="50" cy="50" r="34" />
+                <circle cx="50" cy="50" r="22" />
+              </g>
+              <g class="ai-neural__links">
+                <line x1="50" y1="50" x2="50" y2="16" />
+                <line x1="50" y1="50" x2="81.2" y2="33" />
+                <line x1="50" y1="50" x2="81.2" y2="67" />
+                <line x1="50" y1="50" x2="50" y2="84" />
+                <line x1="50" y1="50" x2="18.8" y2="67" />
+                <line x1="50" y1="50" x2="18.8" y2="33" />
+                <line x1="50" y1="16" x2="81.2" y2="33" />
+                <line x1="81.2" y1="33" x2="81.2" y2="67" />
+                <line x1="81.2" y1="67" x2="50" y2="84" />
+                <line x1="50" y1="84" x2="18.8" y2="67" />
+                <line x1="18.8" y1="67" x2="18.8" y2="33" />
+                <line x1="18.8" y1="33" x2="50" y2="16" />
+              </g>
+              <g class="ai-neural__pulses">
+                <circle class="ai-neural__pulse" r="1.4">
+                  <animateMotion dur="2.8s" repeatCount="indefinite" path="M50,50 L50,16" />
+                </circle>
+                <circle class="ai-neural__pulse" r="1.4">
+                  <animateMotion dur="3.2s" begin="0.4s" repeatCount="indefinite" path="M50,50 L81.2,33" />
+                </circle>
+                <circle class="ai-neural__pulse" r="1.4">
+                  <animateMotion dur="2.6s" begin="0.9s" repeatCount="indefinite" path="M50,50 L81.2,67" />
+                </circle>
+                <circle class="ai-neural__pulse" r="1.4">
+                  <animateMotion dur="3s" begin="1.3s" repeatCount="indefinite" path="M50,50 L50,84" />
+                </circle>
+                <circle class="ai-neural__pulse" r="1.4">
+                  <animateMotion dur="2.9s" begin="0.6s" repeatCount="indefinite" path="M50,50 L18.8,67" />
+                </circle>
+                <circle class="ai-neural__pulse" r="1.4">
+                  <animateMotion dur="3.4s" begin="1.1s" repeatCount="indefinite" path="M50,50 L18.8,33" />
+                </circle>
+              </g>
+            </svg>
+            <span class="ai-neural__core">
+              <span class="ai-neural__core-dot"></span>
+              Resultado
+            </span>
+            <span class="ai-neural__node" style="--i: 0">IA</span>
+            <span class="ai-neural__node" style="--i: 1">BI</span>
+            <span class="ai-neural__node" style="--i: 2">KPIs</span>
+            <span class="ai-neural__node" style="--i: 3">Insights</span>
+            <span class="ai-neural__node" style="--i: 4">Data</span>
+            <span class="ai-neural__node" style="--i: 5">Gestão</span>
+          </div>
+          <span class="ai-scan"></span>
+        </div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Vendas · Operações · Dados · IA</p>
+        <h1 class="hero__name reveal">
+          <span>Jonivaldo</span>
+          <span>Feltrin</span>
+        </h1>
+        <p class="hero__tagline reveal" id="tagline">
+          É impossível vencer aquele que nunca desiste.
+        </p>
+        <div class="hero__meta reveal">
+          <a href="mailto:joni.feltrin@gmail.com" class="meta-link">
+            <i data-lucide="mail"></i>
+            joni.feltrin@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/jonivaldofeltrin" class="meta-link" target="_blank" rel="noopener">
+            <i data-lucide="linkedin"></i>
+            LinkedIn
+          </a>
+          <a href="tel:+5547991384777" class="meta-link">
+            <i data-lucide="phone"></i>
+            (47) 99138-4777
+          </a>
+          <span class="meta-link">
+            <i data-lucide="map-pin"></i>
+            Itajaí, SC
+          </span>
+        </div>
+        <a href="#experiencia" class="scroll-hint reveal" aria-label="Ir para experiência">
+          <i data-lucide="chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section section--experience">
+      <div class="section__ai-grid" aria-hidden="true"></div>
+      <div class="section__inner">
+        <header class="section__header reveal">
+          <span class="section__label"><i data-lucide="briefcase"></i> Trajetória</span>
+          <h2>Experiência profissional</h2>
+          <p>Mais de 20 anos no varejo agropecuário, da operação à estratégia data-driven.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true">
+              <i data-lucide="line-chart"></i>
+            </div>
+            <div class="timeline__body">
+              <div class="timeline__top">
+                <h3>Gerente de Dados e Estratégias</h3>
+                <time datetime="2025-10">out/2025 — Atual</time>
+              </div>
+              <p class="timeline__company">
+                <i data-lucide="building-2"></i> Cravil Cooperativa · Rio do Sul, SC
+              </p>
+              <p>
+                Conecto dados, estratégia e execução para fortalecer decisões baseadas
+                em evidências. Lidero projetos de inteligência de dados, definição de
+                indicadores estratégicos e soluções analíticas que transformam informação
+                em resultado de negócio.
+              </p>
+              <ul class="chip-list">
+                <li>BI</li>
+                <li>Estratégia</li>
+                <li>Inteligência Artificial</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true">
+              <i data-lucide="store"></i>
+            </div>
+            <div class="timeline__body">
+              <div class="timeline__top">
+                <h3>Gerente Operacional de Lojas</h3>
+                <time datetime="2022-06">jun/2022 — nov/2025</time>
+              </div>
+              <p class="timeline__company">
+                <i data-lucide="building-2"></i> Cravil Cooperativa · Santa Catarina
+              </p>
+              <p>
+                Responsável por assegurar a conexão entre estratégia e operação,
+                garantindo resultados, excelência no atendimento e desenvolvimento de
+                equipes por meio da gestão de indicadores e padronização de processos.
+              </p>
+              <ul class="chip-list">
+                <li>Gestão de lojas</li>
+                <li>Indicadores</li>
+                <li>Liderança</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true">
+              <i data-lucide="users"></i>
+            </div>
+            <div class="timeline__body">
+              <div class="timeline__top">
+                <h3>Gerente de Filial</h3>
+                <time datetime="2010-07">jul/2010 — mai/2022</time>
+              </div>
+              <p class="timeline__company">
+                <i data-lucide="building-2"></i> Cravil Cooperativa
+              </p>
+              <p>
+                Liderança das filiais de Itajaí (jul/2010 — out/2020) e Luiz Alves
+                (out/2020 — mai/2022): gestão de equipes, negociação, planejamento
+                estratégico e orçamentário, com foco em resultado e atendimento.
+              </p>
+              <ul class="chip-list">
+                <li>Gestão de negócios</li>
+                <li>Negociação</li>
+                <li>Planejamento</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true">
+              <i data-lucide="truck"></i>
+            </div>
+            <div class="timeline__body">
+              <div class="timeline__top">
+                <h3>Supervisor e Encarregado Operacional</h3>
+                <time datetime="2009-02">fev/2009 — mar/2010</time>
+              </div>
+              <p class="timeline__company">
+                <i data-lucide="building-2"></i> Binotto Logística · Mineiros, GO
+              </p>
+              <p>
+                Atuação operacional na logística, com progressão de Encarregado a
+                Supervisor, fortalecendo processos e coordenação de equipes de campo.
+              </p>
+              <ul class="chip-list">
+                <li>Operações</li>
+                <li>Logística</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true">
+              <i data-lucide="sprout"></i>
+            </div>
+            <div class="timeline__body">
+              <div class="timeline__top">
+                <h3>Técnico em Agropecuária</h3>
+                <time datetime="2003-01">jan/2003 — jan/2009</time>
+              </div>
+              <p class="timeline__company">
+                <i data-lucide="building-2"></i> Cravil Cooperativa · Itajaí, SC
+              </p>
+              <p>
+                Início da carreira no atendimento técnico agropecuário, base que
+                sustentou a trajetória em gestão de lojas e negócios no varejo.
+                Passagem também pela Agro Veterinária Postai (estágio e técnico agrícola).
+              </p>
+              <ul class="chip-list">
+                <li>Atendimento técnico</li>
+                <li>Agropecuária</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="formacao" class="section section--education">
+      <div class="section__ai-grid section__ai-grid--soft" aria-hidden="true"></div>
+      <div class="section__inner">
+        <header class="section__header reveal">
+          <span class="section__label"><i data-lucide="graduation-cap"></i> Aprendizado</span>
+          <h2>Formação</h2>
+          <p>Formação contínua em negócios, liderança, dados e inteligência artificial.</p>
+        </header>
+
+        <div class="edu-grid">
+          <article class="edu-card edu-card--current reveal">
+            <div class="edu-card__icon">
+              <i data-lucide="cpu"></i>
+            </div>
+            <time datetime="2026-11">nov/2026 — nov/2027 · Em andamento</time>
+            <h3>Pós-graduação — Estratégia e Desenvolvimento de Soluções de IA</h3>
+            <p class="edu-card__school">Anhanguera Educacional</p>
+            <p>
+              Inteligência Artificial aplicada a negócios, com Vide Code na prática:
+              configurações iniciais e projetos práticos.
+            </p>
+            <ul class="chip-list">
+              <li>Vide Code</li>
+              <li>Gestão de empresas</li>
+              <li>IA aplicada</li>
+            </ul>
+          </article>
+
+          <article class="edu-card reveal">
+            <div class="edu-card__icon">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <time datetime="2025-05">mai/2025 — out/2026</time>
+            <h3>MBA Inteligência Artificial para Negócios</h3>
+            <p class="edu-card__school">Faculdade Exame</p>
+            <p>Inteligência Artificial &amp; Analytics aplicados a decisões e resultados.</p>
+          </article>
+
+          <article class="edu-card reveal">
+            <div class="edu-card__icon">
+              <i data-lucide="trending-up"></i>
+            </div>
+            <time datetime="2024-11">nov/2024 — mai/2025</time>
+            <h3>Pós em Liderança em Vendas</h3>
+            <p class="edu-card__school">Escola Conquer</p>
+            <p>Liderança comercial, prospecção, negociação e alta performance.</p>
+          </article>
+
+          <article class="edu-card reveal">
+            <div class="edu-card__icon">
+              <i data-lucide="briefcase-business"></i>
+            </div>
+            <time datetime="2013">2013 — 2015</time>
+            <h3>MBA em Gestão Empresarial</h3>
+            <p class="edu-card__school">Instituto Cesumar</p>
+            <p>Administração estratégica, pessoas e performance organizacional.</p>
+          </article>
+
+          <article class="edu-card reveal">
+            <div class="edu-card__icon">
+              <i data-lucide="book-open"></i>
+            </div>
+            <time datetime="2004">2004 — 2008</time>
+            <h3>Bacharelado em Administração</h3>
+            <p class="edu-card__school">Instituto Fayal de Ensino Superior</p>
+            <p>Formação em Administração de Empresas (BBA).</p>
+          </article>
+
+          <article class="edu-card reveal">
+            <div class="edu-card__icon">
+              <i data-lucide="award"></i>
+            </div>
+            <time datetime="1999">1999 — 2001</time>
+            <h3>Ensino Médio / Técnico</h3>
+            <p class="edu-card__school">Escola Agrotécnica Federal de Rio do Sul</p>
+            <p>Base técnica agropecuária que iniciou a carreira no setor.</p>
+          </article>
+        </div>
+
+        <header id="certificacoes" class="section__header section__header--spaced reveal">
+          <span class="section__label"><i data-lucide="badge-check"></i> Credenciais</span>
+          <h2>Certificações</h2>
+          <p>Capacitações práticas em dados, análise e performance comercial.</p>
+        </header>
+
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <div class="edu-card__icon">
+              <i data-lucide="file-spreadsheet"></i>
+            </div>
+            <time datetime="2025-01">jan/2025</time>
+            <h3>Módulo avançado — Análises profissionais no Excel</h3>
+            <p class="edu-card__school">Doutores do Excel</p>
+            <p>Análise de negócios e habilidades analíticas para decisões com dados no Excel.</p>
+            <ul class="chip-list">
+              <li>Análise de negócios</li>
+              <li>Habilidades analíticas</li>
+            </ul>
+          </article>
+
+          <article class="edu-card reveal">
+            <div class="edu-card__icon">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+            <time datetime="2024">2024</time>
+            <h3>Formação em Power BI do Zero ao Pro</h3>
+            <p class="edu-card__school">Capacitação contínua</p>
+            <p>Dashboards, modelagem e análise de dados para apoio à gestão.</p>
+            <ul class="chip-list">
+              <li>Power BI</li>
+              <li>BI</li>
+            </ul>
+          </article>
+
+          <article class="edu-card reveal">
+            <div class="edu-card__icon">
+              <i data-lucide="target"></i>
+            </div>
+            <time datetime="2024">2024</time>
+            <h3>Vendas e Alta Performance</h3>
+            <p class="edu-card__school">Capacitação contínua</p>
+            <p>
+              Negociação, fechamento e pós-venda; Gatilhos mentais para vender mais;
+              Dominando a Prospecção; Alta Performance Profissional.
+            </p>
+            <ul class="chip-list">
+              <li>Negociação</li>
+              <li>Prospecção</li>
+              <li>Performance</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section section--projects">
+      <div class="section__ai-grid section__ai-grid--dark" aria-hidden="true"></div>
+      <div class="section__inner">
+        <header class="section__header reveal">
+          <span class="section__label"><i data-lucide="folder-kanban"></i> Foco atual</span>
+          <h2>Projetos e iniciativas</h2>
+          <p>Frentes em que une operação, estratégia e inteligência de dados.</p>
+        </header>
+
+        <div class="project-grid">
+          <article class="project reveal" data-tilt>
+            <div class="project__visual project__visual--a">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+            <div class="project__body">
+              <h3>Inteligência de Dados na Cooperativa</h3>
+              <p>
+                Projetos de BI e indicadores estratégicos para tornar dados um ativo
+                em todas as áreas e sustentar crescimento com decisões baseadas em evidências.
+              </p>
+              <div class="project__footer">
+                <ul class="chip-list">
+                  <li>Power BI</li>
+                  <li>Analytics</li>
+                </ul>
+                <a
+                  href="https://www.linkedin.com/in/jonivaldofeltrin"
+                  class="project__link"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Ver perfil LinkedIn"
+                >
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tilt>
+            <div class="project__visual project__visual--b">
+              <i data-lucide="network"></i>
+            </div>
+            <div class="project__body">
+              <h3>Padronização Operacional de Lojas</h3>
+              <p>
+                Conexão entre estratégia e operação nas filiais: padronização de
+                processos, gestão por indicadores e excelência no atendimento.
+              </p>
+              <div class="project__footer">
+                <ul class="chip-list">
+                  <li>Operações</li>
+                  <li>KPIs</li>
+                </ul>
+                <a
+                  href="https://www.linkedin.com/in/jonivaldofeltrin"
+                  class="project__link"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Ver perfil LinkedIn"
+                >
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tilt>
+            <div class="project__visual project__visual--c">
+              <i data-lucide="brain"></i>
+            </div>
+            <div class="project__body">
+              <h3>IA e Liderança Comercial</h3>
+              <p>
+                Formação em IA para negócios e liderança em vendas, com foco em
+                inovação, prospecção, negociação e capacitação de equipes de alta performance.
+              </p>
+              <div class="project__footer">
+                <ul class="chip-list">
+                  <li>IA</li>
+                  <li>Vendas</li>
+                </ul>
+                <a
+                  href="https://www.linkedin.com/in/jonivaldofeltrin"
+                  class="project__link"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Ver perfil LinkedIn"
+                >
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>© <span id="year"></span> Jonivaldo Feltrin. Gestão de negócios com decisão data-driven.</p>
+      <div class="footer-links">
+        <a href="mailto:joni.feltrin@gmail.com" aria-label="E-mail"><i data-lucide="mail"></i></a>
+        <a href="https://www.linkedin.com/in/jonivaldofeltrin" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="tel:+5547991384777" aria-label="Telefone"><i data-lucide="phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@0.468.0"></script>
+  <script src="script.js"></script>
+</body>
+</html>
