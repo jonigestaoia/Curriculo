@@ -6,7 +6,7 @@
   <title>Jonivaldo Feltrin | Gestão, Dados e IA</title>
   <meta
     name="description"
-    content="Jonivaldo Feltrin — Gerente de Dados e Estratégias. Mais de 20 anos no varejo agropecuário, da operação à decisão data-driven."
+    content="Jonivaldo Feltrin — Gerente de Dados e Estratégias. Mais de 20 anos no varejo agropecuário, da operação à gestão de negócios baseado em dados."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -67,10 +67,111 @@
         />
         <div class="hero__veil" aria-hidden="true"></div>
       </div>
+      <div class="hero__neural" aria-hidden="true">
+        <svg class="hero__neural-svg" viewBox="0 0 440 440" role="img">
+          <defs>
+            <radialGradient id="neural-core" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(224, 146, 94, 0.55)" />
+              <stop offset="55%" stop-color="rgba(196, 120, 74, 0.18)" />
+              <stop offset="100%" stop-color="rgba(196, 120, 74, 0)" />
+            </radialGradient>
+            <filter id="neural-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="2.4" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <circle class="neural-ring neural-ring--outer" cx="220" cy="220" r="152" />
+          <circle class="neural-ring neural-ring--mid" cx="220" cy="220" r="100" />
+          <circle class="neural-ring neural-ring--inner" cx="220" cy="220" r="54" />
+          <circle cx="220" cy="220" r="78" fill="url(#neural-core)" />
+
+          <g class="neural-links" stroke="rgba(232, 239, 233, 0.3)" stroke-width="1">
+            <line x1="220" y1="68" x2="220" y2="120" />
+            <line x1="328" y1="112" x2="290" y2="148" />
+            <line x1="372" y1="220" x2="320" y2="220" />
+            <line x1="328" y1="328" x2="290" y2="292" />
+            <line x1="220" y1="372" x2="220" y2="320" />
+            <line x1="112" y1="328" x2="150" y2="292" />
+            <line x1="68" y1="220" x2="120" y2="220" />
+            <line x1="112" y1="112" x2="150" y2="148" />
+            <line x1="220" y1="120" x2="220" y2="166" />
+            <line x1="290" y1="148" x2="256" y2="184" />
+            <line x1="320" y1="220" x2="274" y2="220" />
+            <line x1="290" y1="292" x2="256" y2="256" />
+            <line x1="220" y1="320" x2="220" y2="274" />
+            <line x1="150" y1="292" x2="184" y2="256" />
+            <line x1="120" y1="220" x2="166" y2="220" />
+            <line x1="150" y1="148" x2="184" y2="184" />
+            <line x1="220" y1="120" x2="290" y2="148" />
+            <line x1="290" y1="148" x2="320" y2="220" />
+            <line x1="320" y1="220" x2="290" y2="292" />
+            <line x1="290" y1="292" x2="220" y2="320" />
+            <line x1="220" y1="320" x2="150" y2="292" />
+            <line x1="150" y1="292" x2="120" y2="220" />
+            <line x1="120" y1="220" x2="150" y2="148" />
+            <line x1="150" y1="148" x2="220" y2="120" />
+          </g>
+
+          <g filter="url(#neural-glow)">
+            <circle class="neural-pulse" r="3" fill="rgba(224, 146, 94, 0.95)">
+              <animateMotion dur="3.2s" repeatCount="indefinite" path="M220,68 L220,120 L220,166 L220,220" />
+            </circle>
+            <circle class="neural-pulse" r="3" fill="rgba(95, 196, 162, 0.95)">
+              <animateMotion dur="3.2s" begin="0.8s" repeatCount="indefinite" path="M372,220 L320,220 L274,220 L220,220" />
+            </circle>
+            <circle class="neural-pulse" r="3" fill="rgba(224, 146, 94, 0.95)">
+              <animateMotion dur="3.2s" begin="1.6s" repeatCount="indefinite" path="M220,372 L220,320 L220,274 L220,220" />
+            </circle>
+            <circle class="neural-pulse" r="3" fill="rgba(95, 196, 162, 0.95)">
+              <animateMotion dur="3.2s" begin="2.4s" repeatCount="indefinite" path="M68,220 L120,220 L166,220 L220,220" />
+            </circle>
+          </g>
+
+          <g class="neural-nodes" fill="rgba(95, 196, 162, 0.95)">
+            <circle cx="220" cy="120" r="5.5" />
+            <circle cx="290" cy="148" r="5.5" />
+            <circle cx="320" cy="220" r="5.5" />
+            <circle cx="290" cy="292" r="5.5" />
+            <circle cx="220" cy="320" r="5.5" />
+            <circle cx="150" cy="292" r="5.5" />
+            <circle cx="120" cy="220" r="5.5" />
+            <circle cx="150" cy="148" r="5.5" />
+            <circle cx="220" cy="68" r="6.5" fill="rgba(224, 146, 94, 0.95)" />
+            <circle cx="328" cy="112" r="6.5" fill="rgba(224, 146, 94, 0.95)" />
+            <circle cx="372" cy="220" r="6.5" fill="rgba(224, 146, 94, 0.95)" />
+            <circle cx="328" cy="328" r="6.5" fill="rgba(224, 146, 94, 0.95)" />
+            <circle cx="220" cy="372" r="6.5" fill="rgba(224, 146, 94, 0.95)" />
+            <circle cx="112" cy="328" r="6.5" fill="rgba(224, 146, 94, 0.95)" />
+            <circle cx="68" cy="220" r="6.5" fill="rgba(224, 146, 94, 0.95)" />
+            <circle cx="112" cy="112" r="6.5" fill="rgba(224, 146, 94, 0.95)" />
+          </g>
+
+          <g class="neural-labels" font-family="DM Sans, system-ui, sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,0.94)" text-anchor="middle">
+            <text x="220" y="36">Dados</text>
+            <text x="348" y="96">IA</text>
+            <text x="404" y="224">Análises</text>
+            <text x="348" y="356">Insights</text>
+            <text x="220" y="412">Decisão</text>
+            <text x="92" y="356">BI</text>
+            <text x="48" y="224">Estratégia</text>
+            <text x="92" y="96">KPIs</text>
+          </g>
+
+          <g class="neural-center">
+            <circle cx="220" cy="220" r="40" fill="rgba(15, 28, 26, 0.78)" stroke="rgba(224, 146, 94, 0.9)" stroke-width="1.7" />
+            <circle cx="220" cy="220" r="31" fill="none" stroke="rgba(95, 196, 162, 0.38)" stroke-width="1" stroke-dasharray="3 4" />
+            <text x="220" y="226" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="19" fill="#fff">Resultado</text>
+          </g>
+        </svg>
+      </div>
       <div class="hero__content">
         <p class="hero__brand reveal">Jonivaldo Feltrin</p>
         <h1 class="hero__headline reveal">
-          Gestão de negócios com decisão data-driven
+          Gestão de Negócios baseado em dados
         </h1>
         <p class="hero__tagline reveal" id="tagline">
           É impossível vencer aquele que nunca desiste.
@@ -527,7 +628,7 @@
 
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <p>© <span id="year"></span> Jonivaldo Feltrin. Gestão de negócios com decisão data-driven.</p>
+      <p>© <span id="year"></span> Jonivaldo Feltrin. Gestão de Negócios baseado em dados.</p>
       <div class="footer-links">
         <a href="mailto:joni.feltrin@gmail.com" aria-label="E-mail"><i data-lucide="mail"></i></a>
         <a href="https://www.linkedin.com/in/jonivaldofeltrin" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
