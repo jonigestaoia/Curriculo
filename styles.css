@@ -518,17 +518,112 @@ button {
 
 @media (max-width: 900px) {
   .hero__neural {
-    width: min(46vw, 320px);
+    width: min(42vw, 280px);
     top: 12%;
-    right: 0.5rem;
+    right: 0.75rem;
+  }
+
+  .hero__veil {
+    background:
+      linear-gradient(to top, rgba(15, 28, 26, 0.92) 0%, rgba(15, 28, 26, 0.72) 34%, rgba(15, 28, 26, 0.2) 58%, transparent 78%),
+      linear-gradient(115deg, rgba(15, 28, 26, 0.55) 0%, rgba(15, 28, 26, 0.2) 48%, transparent 72%);
   }
 }
 
-@media (max-width: 640px) {
+/* Celular: foto no terço superior, texto no inferior */
+@media (max-width: 700px) {
+  .hero {
+    min-height: 100svh;
+    align-items: end;
+  }
+
+  .hero__photo {
+    object-position: center 10%;
+  }
+
+  .hero__veil {
+    background:
+      linear-gradient(
+        to top,
+        rgba(15, 28, 26, 0.97) 0%,
+        rgba(15, 28, 26, 0.9) 26%,
+        rgba(15, 28, 26, 0.45) 48%,
+        rgba(15, 28, 26, 0.12) 66%,
+        transparent 82%
+      ),
+      linear-gradient(180deg, rgba(15, 28, 26, 0.28) 0%, transparent 22%);
+  }
+
   .hero__neural {
-    width: min(58vw, 220px);
-    top: 10%;
-    right: 0;
+    width: min(36vw, 148px);
+    top: 11%;
+    right: 3%;
+    animation: neuralInMobile 1s var(--ease) 0.35s forwards;
+  }
+
+  .hero__neural-svg {
+    filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.4));
+  }
+
+  .neural-labels {
+    display: none;
+  }
+
+  .neural-ring--outer {
+    opacity: 0.55;
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: none;
+    padding: 0 1.15rem calc(1.35rem + env(safe-area-inset-bottom, 0px));
+    padding-top: 0;
+  }
+
+  .hero__brand {
+    font-size: clamp(2.05rem, 9.2vw, 2.55rem);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    max-width: 12ch;
+  }
+
+  .hero__headline {
+    font-size: 1.02rem;
+    line-height: 1.3;
+    margin-bottom: 0.45rem;
+    max-width: 20ch;
+  }
+
+  .hero__tagline {
+    font-size: 0.92rem;
+    line-height: 1.4;
+    margin-bottom: 1.15rem;
+    max-width: 26ch;
+    min-height: 0;
+  }
+
+  .hero__cta {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.55rem;
+  }
+
+  .hero__cta .btn {
+    flex: 1 1 0;
+    padding: 0.78rem 0.7rem;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+}
+
+@keyframes neuralInMobile {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.94);
+  }
+  to {
+    opacity: 0.82;
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -1248,14 +1343,20 @@ button:focus-visible {
     padding: 1.1rem 1.15rem;
   }
 
+  .contact-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 380px) {
   .hero__cta {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .contact-actions {
-    flex-direction: column;
-    align-items: stretch;
+  .hero__brand {
+    max-width: none;
   }
 }
 
@@ -1282,7 +1383,7 @@ button:focus-visible {
   }
 
   .hero__neural {
-    opacity: 0.9;
+    opacity: 0.82;
     transform: none;
   }
 
